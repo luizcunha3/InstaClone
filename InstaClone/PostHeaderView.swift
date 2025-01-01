@@ -15,9 +15,21 @@ struct PostHeaderView: View {
                 .frame(width: 40, height: 40)
                 .clipShape(.circle)
                 
-            Text("Theozinho")
-                .font(.caption)
-                .fontWeight(.semibold)
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Theozinho")
+                        .font(.caption)
+                        .fontWeight(.semibold)
+                    ZStack {
+                        Image(systemName: "checkmark.seal.fill")
+                            .foregroundColor(.green)
+                    }
+                }
+                Text("Paraty - RJ")
+                    .font(.caption2)
+            }
+            Spacer()
+            Image(systemName: "ellipsis")
         }
         
     }

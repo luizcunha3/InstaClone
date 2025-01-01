@@ -9,7 +9,16 @@ import SwiftUI
 
 struct PostHeaderView: View {
     var body: some View {
-        Image("profileTheo")
+        HStack {
+            Image("profileTheo")
+                .resizable()
+                .frame(width: 40, height: 40)
+                .clipShape(.circle)
+                
+            Text("Theozinho")
+                .font(.caption)
+                .fontWeight(.semibold)
+        }
         
     }
 }
